@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { SearchBox } from '../search-box/search-box'
 import { CardList } from '../card-list/card-list'
 
+import './monsters.styles.css'
+
 class Monsters extends Component {
     constructor (props) {
         super(props)
@@ -26,6 +28,7 @@ class Monsters extends Component {
         )
         return (
             <div>
+                <h1>Monsters Rolodex</h1>
                 <SearchBox
                     placeholder='Search Monsters'
                     handleChange={e => this.setState({ searchField: e.target.value })}
